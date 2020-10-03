@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSTA FEED</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="bg-dark">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-2" id="pro-pic"></div>
+          <div
+            class="container p-3 col-md-8 text-center d-flex align-items-center justify-content-start"
+          >
+            <h1 class="font text-light" id="page-name"></h1>
+          </div>
+        </div>
+        <p id="insta_bio" class="text-light font text-center"></p>
+      </div>
+    </section>
+    <section id="feed-content" class="bg-insta">
+      <div class="container mt-4">
+        <p class="font text-right text-light font-weight-bold p-2">
+          Swipe to see more -->
+        </p>
+        <div class="swiper-container py-5">
+          <div class="swiper-wrapper" id="feed-holder">
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+            <div class="swiper-slide pre-loader"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        scrollbar: {
+          spaceBetween: 30,
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+    </script>
+  </body>
+</html>

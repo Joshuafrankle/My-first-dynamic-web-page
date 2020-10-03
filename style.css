@@ -1,0 +1,24 @@
+.font {
+  font-family: "Montserrat", sans-serif;
+}
+.imgsize {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.bg-red {
+  background: rgba(255, 255, 255, 0.144);
+}
+
+.bg-insta {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
