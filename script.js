@@ -49,7 +49,7 @@ ajax.onload = () => {
       " </div> </div> </div> </div> </div> </div>";
 
     document.getElementById("feed-holder").innerHTML += img;
-    swiper.update();
+    swiper.updateSlides();
   }
   // Since loader is very beautiful
   setTimeout(() => {
