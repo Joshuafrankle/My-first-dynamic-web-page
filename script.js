@@ -51,11 +51,9 @@ ajax.onload = () => {
     document.getElementById("feed-holder").innerHTML += img;
     swiper.updateSlides();
   }
-  // Since loader is very beautiful
-  setTimeout(() => {
-    document.getElementById("page-loader").classList.add("d-none");
-    document.getElementById("feed-content").classList.remove("d-none");
-  }, 2000);
+  document.getElementById("page-loader").classList.add("d-none");
 };
+
+document.getElementById("feed-content").classList.remove("d-none");
 
 ajax.send();
